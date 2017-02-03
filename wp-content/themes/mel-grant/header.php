@@ -23,6 +23,6 @@
 	?>
 	
 <body <?php body_class( $awesome_classes ); ?>>
-<div class="container-full-width site-banner">
-Here
+<div class="container-full-width">
+<img src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg">
 </div>
