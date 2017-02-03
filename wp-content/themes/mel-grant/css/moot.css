@@ -1,5 +1,6 @@
 .site-banner {
 	background: url("../img/banner.jpg");
 	background-size: contain;
+	background-repeat: no-repeat;
 	min-height: 720px;
 }
