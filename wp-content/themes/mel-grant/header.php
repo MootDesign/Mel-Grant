@@ -23,4 +23,6 @@
 	?>
 	
 <body <?php body_class( $awesome_classes ); ?>>
-		
+<div class="container-full-width">
+Here
+</div>

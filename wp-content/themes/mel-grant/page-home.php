@@ -6,6 +6,8 @@
 	
 get_header(); ?>
 
-<?php echo "Home page content" ?>
+<div class="container">
+Home Page Content
+</div>
 
 <?php get_footer(); ?>
