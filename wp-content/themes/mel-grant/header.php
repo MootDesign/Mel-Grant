@@ -24,5 +24,5 @@
 	
 <body <?php body_class( $awesome_classes ); ?>>
 <div class="container-full-width">
-<img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg">
+<img style="position: absolute; top 0;" class="banner-image" src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg">
 </div>
