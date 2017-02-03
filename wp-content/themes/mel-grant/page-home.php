@@ -121,11 +121,13 @@
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script>
+      jQuery(document).ready(function($){
         $(function() {
           $('#slides').superslides({
             hashchange: true
           });
         });
+        }); 
       </script>
     </body>
     </html>
