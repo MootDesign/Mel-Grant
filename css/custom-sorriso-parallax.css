@@ -1,0 +1,47 @@
+/* START My Custom */
+
+p{
+	text-align: justify;
+}
+
+.home-banner {
+	background-image: url(../img/Sorriso-1200x720.jpg);
+}
+
+.back-transparent {
+    background-color: transparent ;
+    border-color: transparent;
+}
+.white {
+	color: #ffffff;
+}
+
+
+
+
+/* END My Custom */
+
+/* START Bootstrap Custom */
+
+.navbar-custom {
+  border-color: transparent;
+  padding: 10px 0;
+}
+
+
+
+/* END Bootstrap Custom */
+
+.parallax {
+    /* The image used */
+    background-image: url(../img/Sorriso-1200x720.jpg);
+
+    /* Set a specific height 
+    min-height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

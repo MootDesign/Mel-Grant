@@ -1,0 +1,42 @@
+.custom-w-col {
+	width: inherit !important;
+	padding-right: 1px !important;
+    padding-left: 1px !important;
+}
+
+.custom-border {
+	padding: 30px 0px 30px 0px;
+    border-top: 1px dotted #7490a0;
+}
+
+.pad-b-30 {
+	padding-bottom: 30px;
+}
+
+.belg-tel {
+	border-top: 1px dotted #7490a0;
+	padding-top: 5px;
+}
+
+
+
+.popinfo {
+    background: rgba(46, 66, 135, 0.9) !important;
+    margin-top: 193px;
+    background: transparent url(http://www.henryandjames.co.uk/img/steel.png) top left repeat;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    /* opacity: 0; */
+}
+
+.opacity {
+	opacity: 0;
+}
+
+span.dark > p {
+	margin-bottom: -6px!important;"
+}
