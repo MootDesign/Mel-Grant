@@ -1,4 +1,4 @@
 .site-banner {
-	background: #000;
-	min-height: 600px;
+	background: url("img/banner.jpg");
+	min-height: 720px;
 }
