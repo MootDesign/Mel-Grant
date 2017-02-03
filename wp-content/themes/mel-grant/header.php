@@ -44,9 +44,9 @@
           </div>
           <!-- /.container-fluid -->
         </nav>
-      </header>
+</header>
 
-      
+
 <div class="container-full-width">
 <img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg">
 </div>
