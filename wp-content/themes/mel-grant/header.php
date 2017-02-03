@@ -23,6 +23,6 @@
 	?>
 	
 <body <?php body_class( $awesome_classes ); ?>>
-<div class="container-full-width">
+<div class="container-full-width site-banner">
 Here
 </div>
