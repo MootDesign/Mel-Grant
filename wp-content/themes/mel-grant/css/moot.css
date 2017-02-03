@@ -14,7 +14,7 @@
 	-o-transform-origin: left center;
 	transform-origin: left center;
 	transition: all 0.3s ease-out;
- 	background:#000000; }
+ 	background:#ffffff; }
 	.home .st0-menu {
 	 	background:#000; }
 	.st0-menu:last-of-type {
@@ -27,7 +27,7 @@
 		opacity: 1; }
 
 .st0-menu.open {
- 	background:#000000;
+ 	background:#ffffff;
  	transition: all 0.3s ease-out; }
 
 .st0-menu.open:first-of-type {

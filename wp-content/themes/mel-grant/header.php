@@ -24,10 +24,10 @@
 	
 <body <?php body_class( $awesome_classes ); ?>>
 <div class="navbar-header">
-<button onclick="openNav()" type="button" class="navbar-toggle collapsed full-height-menu-toggle toggle-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-										<span class="st0-menu bar-one"></span>
-										<span class="st0-menu bar-two"></span>
-										<span class="st0-menu bar-three"></span>
+<button style="display: block!important;" onclick="openNav()" type="button" class="navbar-toggle collapsed full-height-menu-toggle toggle-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="st0-menu bar-one"></span>
+<span class="st0-menu bar-two"></span>
+<span class="st0-menu bar-three"></span>
 </button>
 </div>
 
