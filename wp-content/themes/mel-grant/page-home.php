@@ -49,12 +49,12 @@
             </nav>
           </div>
 
-          <!-- <div class ="" id="slides">
+           <div class ="" id="slides">
             <div class="slides-container">
-              <img src="img/Sorriso-1200x720.jpg" id="people">
-              <img src="img/surly.jpeg" width="1024" height="682" alt="Surly">
-              <img src="img/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli" id="cinelli">
-              <img src="img/affinity.jpeg" width="1024" height="685" alt="Affinity">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/Sorriso-1200x720.jpg" id="people">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/surly.jpeg" width="1024" height="682" alt="Surly">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli" id="cinelli">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/affinity.jpeg" width="1024" height="685" alt="Affinity">
             </div>
 
             <nav class="slides-navigation text-center [ intro ]">
@@ -66,7 +66,7 @@
               <a href="#" class="next">Next</a>
               <a href="#" class="prev">Previous</a>
             </nav>
-          </div> -->
+          </div>
 
           <div class="container">
 
