@@ -6,17 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Marilyn Grant</title>
-
-  <!-- My Custom -->
-  <link href="css/custom-melanie.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/superslides.css">
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Fontawesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="css/animate.css">
-
+	<?php wp_head(); ?>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -130,14 +120,6 @@
       </div>     
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/custom-melanie.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.animate-enhanced.min.js"></script>
-      <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
       <script>
         $(function() {
           $('#slides').superslides({
