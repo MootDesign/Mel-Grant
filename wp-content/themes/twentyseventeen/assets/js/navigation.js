@@ -4,7 +4,7 @@
  *
  * Contains handlers for navigation and widget area.
  */
-
+/*
 (function( $ ) {
 	var masthead, menuToggle, siteNavContain, siteNavigation;
 
@@ -107,3 +107,24 @@
 		});
 	})();
 })( jQuery );
+*/
+
+jQuery(document).ready(function($){
+  'use strict';
+  $( '#burger-menu' ).click( function() {
+  	$(this).removeClass("closing");
+
+  	if ($(this).hasClass( "active" )) {
+  	$(this).removeClass("active");
+  	$(this).addClass("closing");
+  	$("#site-navigation").removeClass("visible");
+  	$( '.main-navigation li.item' ).removeClass( 'visible' );
+  	}
+  	else {
+  		$(this).addClass("active");
+  		$("#site-navigation").addClass("visible");
+  		$( '.main-navigation li.item' ).addClass( 'visible' );
+  	}
+    });
+
+}); 

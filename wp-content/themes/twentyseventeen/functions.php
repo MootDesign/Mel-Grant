@@ -435,6 +435,9 @@ function twentyseventeen_scripts() {
 
 	wp_enqueue_script( 'twentyseventeen-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
 
+	wp_enqueue_script( 'parallax-js', get_theme_file_uri( '/assets/js/parallax.min.js' ), array(), '1.0', true );
+
+
 	$twentyseventeen_l10n = array(
 		'quote'          => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
 	);

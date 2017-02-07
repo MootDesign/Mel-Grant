@@ -9,45 +9,91 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'twentyseventeen-panel ' ); ?> >
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg"></div>
 
-	<?php if ( has_post_thumbnail() ) :
-		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
 
-		$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+	<nav id="site-navigation" class="main-navigation" role="navigation" align="center">
 
-		$thumbnail_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'twentyseventeen-featured-image' );
+		<!-- <ul id="primary-menu">
 
-		// Calculate aspect ratio: h / w * 100%.
-		$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100;
+		<?php
+
+			$locations = get_theme_mod( 'nav_menu_locations' );
+
+			$menu_id = @$locations[ 'primary' ];
+
+
+
+			$items = wp_get_nav_menu_items( $menu_id );
+
+
+
+			// foreach( $items as $item ) :
+
 		?>
 
-		<div class="panel-image" style="background-image: url(<?php echo esc_url( $thumbnail[0] ); ?>);">
-			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
-		</div><!-- .panel-image -->
+				<li>
 
-	<?php endif; ?>
+					<span class="plus"></span>
 
-	<div class="panel-content">
-		<div class="wrap">
-			<header class="entry-header">
-				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+					<a href="#"><?php echo $item->post_title ?></a>
 
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
+					<span class="subtitle"><?php echo $item->post_excerpt ?></span>
 
-			</header><!-- .entry-header -->
+				</li>
 
-			<div class="entry-content">
-				<?php
-					/* translators: %s: Name of current post */
-					the_content( sprintf(
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
-						get_the_title()
-					) );
-				?>
-			</div><!-- .entry-content -->
+		<?php
 
-		</div><!-- .wrap -->
-	</div><!-- .panel-content -->
+			// endforeach;
 
-</article><!-- #post-## -->
+		?>
+
+		</ul> -->
+
+		<ul id="primary-menu">
+
+			<li class="item col-sm-12">
+
+				<a href="#" class="">words</a>
+
+			</li>
+
+			<li class="item col-sm-12" data-bg="white">
+
+				<a href="#" class="">shoots</a>
+
+			</li>
+
+			<li class="item col-sm-12">
+
+				<a href="#news" class="">inspiration</a>
+
+			</li>
+
+			<li class="item col-sm-12">
+
+				<a href="#" class="">me</a>
+			</li>
+
+		</ul>
+
+	</nav><!-- #site-navigation -->
+
+
+<div class="container-full-width">
+	<div class="col-xs-12" align="center">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.png" width="186px;">
+	</div>
+	
+	<div class="col-xs-12" align="center"><h1 style="font-size: 29px; font-weight: bold; color: #000">ME</h1></div>
+	
+	<div class="col-xs-12" align="center"><h5 style="margin-top: 25px; color: #d5d6d8; font-weight: normal; font-size: 12px;">MELANIE GRANT</h5></div>
+</div>
+<div class="container-full-width">
+
+	<div class="col-xs-5" style="margin-top: 80px;"></div>
+	<div class="col-xs-2" align="center" style="margin-top: 80px;"><?php the_post_thumbnail(); ?></div>
+	<div class="col-xs-5" style="margin-top: 80px;"></div>
+	
+	<div class="col-sm-12" style="margin-top: 40px;" align="center"><?php the_content(); ?></div>
+</div>

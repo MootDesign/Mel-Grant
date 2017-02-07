@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
-
+<!--
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
@@ -34,12 +34,79 @@
 			<div class="navigation-top">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
-			</div><!-- .navigation-top -->
+				</div>
+			</div>
 		<?php endif; ?>
 
-	</header><!-- #masthead -->
+	</header>
 
+	<nav id="site-navigation" class="main-navigation" role="navigation" align="center">
+
+		<ul id="primary-menu">
+
+		<?php
+
+			$locations = get_theme_mod( 'nav_menu_locations' );
+
+			$menu_id = @$locations[ 'primary' ];
+
+
+
+			$items = wp_get_nav_menu_items( $menu_id );
+
+
+
+			// foreach( $items as $item ) :
+
+		?>
+
+				<li>
+
+					<span class="plus"></span>
+
+					<a href="#"><?php echo $item->post_title ?></a>
+
+					<span class="subtitle"><?php echo $item->post_excerpt ?></span>
+
+				</li>
+
+		<?php
+
+			// endforeach;
+
+		?>
+
+		</ul>
+
+		<ul id="primary-menu">
+
+			<li class="item col-sm-12">
+
+				<a href="#" class="">words</a>
+
+			</li>
+
+			<li class="item col-sm-12" data-bg="white">
+
+				<a href="#" class="">shoots</a>
+
+			</li>
+
+			<li class="item col-sm-12">
+
+				<a href="#news" class="">inspiration</a>
+
+			</li>
+
+			<li class="item col-sm-12">
+
+				<a href="#" class="">me</a>
+			</li>
+
+		</ul>
+
+	</nav> 
+	
 	<?php
 	// If a regular post or page, and not the front page, show the featured image.
 	if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! twentyseventeen_is_frontpage() ) ) ) :
