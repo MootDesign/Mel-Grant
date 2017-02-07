@@ -25,35 +25,17 @@
 <body <?php body_class( $awesome_classes ); ?>>
 <div class="navbar-header">
 <button style="display: block!important; position: absolute; top: 5vw; left: 5vw;" onclick="openNav()" type="button" class="navbar-toggle collapsed full-height-menu-toggle toggle-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-<span class="st0-menu bar-one"></span>
-<span class="st0-menu bar-two"></span>
-<span class="st0-menu bar-three"></span>
-</button>
-</div>
 
-<div class="container-full-width">
-<img class="banner-image" src="<?php echo get_template_directory_uri(); ?>/img/banner.jpg">
-</div>
+	  <div id="burger-menu" class="">
 
-	
-<script type="text/javascript">
-	/* Open when someone clicks on the span element */
-function openNav() {
-	jQuery(document).ready(function($){
-   	 	document.getElementById("myNav").style.width = "100%";
-   	 	$('.bar-one').addClass("open");
-    	$('.bar-two').addClass("open");
-    	$('.bar-three').addClass("open");
-    });
-}
+      <span class="burger-menu-piece"></span>
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-	jQuery(document).ready(function($){
-    	$('.bar-one').removeClass("open");
-    	$('.bar-two').removeClass("open");
-    	$('.bar-three').removeClass("open");
-    	$('.toggle-menu').removeClass("open");
-    });
-}
+      <span class="burger-menu-piece"></span>
+
+      <span class="burger-menu-piece"></span>
+
+	  </div>
+
+	  <h1 class="site-name">Melanie Grant</h1>
+
 </script>
