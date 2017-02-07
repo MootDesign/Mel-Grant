@@ -5,7 +5,7 @@
 */
 	
 get_header(); ?>
-
+<!--
 <div class="container-full-width">
 	<div class="col-xs-12" align="center">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/arrow_down.png" width="186px;">
@@ -22,5 +22,5 @@ get_header(); ?>
 	<div class="col-xs-5" style="margin-top: 80px;"></div>
 	
 	<div class="col-sm-12" style="margin-top: 40px;" align="center"><?php the_content(); ?></div>
-</div>
+</div>-->
 <?php get_footer(); ?>
