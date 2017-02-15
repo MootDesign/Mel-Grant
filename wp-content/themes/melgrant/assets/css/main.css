@@ -1,0 +1,220 @@
+body {
+  background: #ffffff;
+  color: #fff; }
+
+#site-logo {
+  position: absolute;
+  z-index: 15;
+  right: 55px;
+  top: 50px;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  #site-logo:hover {
+    opacity: 1; }
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below ) */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 3;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: black;
+  /* Black fallback color */
+  background-color: black;
+  /* Black w/opacity */
+  overflow: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible; }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  outline: none;
+  text-transform: uppercase;
+  font-weight: normal; }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+
+#burger-menu1 {
+  position: fixed;
+  width: 35px;
+  height: 20px;
+  margin: 0 auto;
+  left: 50px;
+  top: 40px;
+  z-index: 10;
+  background: none; }
+
+.hamburger-box {
+  width: 35px; }
+
+#burger-menu1 .hamburger-inner, #burger-menu1 .hamburger-inner:before, #burger-menu1 .hamburger-inner:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 2px;
+  width: 35px;
+  border-radius: initial; }
+
+#burger-menu {
+  cursor: pointer;
+  position: fixed;
+  width: 25px;
+  height: 15px;
+  margin: 0 auto;
+  left: 80px;
+  top: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 22; }
+
+@media screen and (max-width: 762px) {
+  #burger-menu {
+    left: 30px; } }
+
+#burger-menu .burger-menu-piece {
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-top: 2.5px solid #fff;
+  transform-origin: 50% 50%;
+  transition: transform 400ms ease-out; }
+
+.single-works #burger-menu .burger-menu-piece {
+  border-top-color: #231f20; }
+
+#burger-menu .burger-menu-piece:nth-child(1) {
+  top: 0; }
+
+#burger-menu .burger-menu-piece:nth-child(2) {
+  top: 6px;
+  opacity: 1;
+  transition: transform 400ms ease-out, opacity 0ms linear 200ms; }
+
+#burger-menu .burger-menu-piece:nth-child(3) {
+  top: 12px; }
+
+#burger-menu.active .burger-menu-piece:nth-child(1) {
+  animation: burger-open-top 400ms ease-out forwards; }
+
+#burger-menu.active .burger-menu-piece:nth-child(2) {
+  opacity: 0;
+  transition: transform 400ms ease-out, opacity 0ms linear 200ms; }
+
+#burger-menu.active .burger-menu-piece:nth-child(3) {
+  animation: burger-open-bot 400ms ease-out forwards; }
+
+.single-works #burger-menu.active .burger-menu-piece {
+  border-top-color: #fff; }
+
+#burger-menu.closing .burger-menu-piece:nth-child(1) {
+  animation: burger-close-top 400ms ease-out forwards; }
+
+#burger-menu.closing .burger-menu-piece:nth-child(3) {
+  animation: burger-close-bot 400ms ease-out forwards; }
+
+#home-banner-wrapper {
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  #home-banner-wrapper .parallax-window {
+    min-height: 1000px;
+    background: url("../images/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    position: relative; }
+  #home-banner-wrapper .parallax-mirror {
+    position: inherit; }
+  #home-banner-wrapper .home-banner-desc {
+    opacity: 0.8; }
+  #home-banner-wrapper .site-name {
+    position: absolute; }
+  #home-banner-wrapper .site-name, #home-banner-wrapper .site-desc {
+    cursor: pointer;
+    position: absolute;
+    height: 20px;
+    font-size: 40px;
+    margin: 0 auto;
+    right: 100px;
+    top: 450px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    display: none;
+    opacity: 0.8; }
+  #home-banner-wrapper .site-desc {
+    font-size: 15px;
+    text-transform: none;
+    top: 515px;
+    font-weight: normal; }
+
+#home-main-content {
+  background: #ffffff;
+  position: relative;
+  z-index: 11; }
+  #home-main-content .home-about {
+    width: 100%;
+    position: absolute; }
+    #home-main-content .home-about img, #home-main-content .home-about h5 {
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+    #home-main-content .home-about.fixed {
+      position: fixed;
+      top: 0; }
+      #home-main-content .home-about.fixed img {
+        width: 100px;
+        opacity: 0.7; }
+      #home-main-content .home-about.fixed h5 {
+        opacity: 0; }
+  #home-main-content .home-about-content {
+    padding-top: 180px; }

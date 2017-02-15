@@ -1,0 +1,11 @@
+@mixin prefix($property, $value, $prefixes: ('webkit' 'moz')) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+@mixin transition($time: 0.3s, $timing-function: ease-in-out) {
+    @include prefix(transition, all $time $timing-function, 'webkit');
+}

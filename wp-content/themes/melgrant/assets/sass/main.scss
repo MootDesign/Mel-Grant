@@ -1,0 +1,10 @@
+//Global files
+@import "config";
+@import 'mixins';
+@import 'global-styles';    
+
+//Template partials
+@import 'template/top-nav';
+
+//Pages
+@import 'pages/home';
